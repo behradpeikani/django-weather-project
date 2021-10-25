@@ -1,0 +1,19 @@
+body{
+    margin-top: 50px;
+    background-image: url('/static/img/key8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+h4{
+    color: red;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+#city-weather{
+    margin-top: 20px;
+}

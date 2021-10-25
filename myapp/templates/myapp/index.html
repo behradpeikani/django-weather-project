@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Weather {% endblock title %}
 
 {% block content %}
-<form method="post" class="col-md"">
+<h1 class="text-center">Please Enter the name of the city</h1>
+<form method="post" class="col-md">
     {% csrf_token %}
     <div class=" input-group">
 
@@ -13,7 +15,7 @@
     </div>
     </div>
 <form>
-  <div class="row">
+  <div class="row" id="city-weather">
   {% if country_code and temp and pressure and humidity %}
   <div class="col d-flex justify-content-center">
     <div class=" card text-white bg-light mb-6">
